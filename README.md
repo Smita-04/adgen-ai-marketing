@@ -78,3 +78,8 @@ ad-gen-free/
 ├── .env.local                # Environment Secrets (Gitignored)
 ├── next.config.ts            # Build Configuration
 └── package.json              # Dependency Manifest
+
+
+```
+git clone https://github.com/Smita-04/adgen-ai.git
+cd adgen-ai
