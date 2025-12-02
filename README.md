@@ -25,7 +25,8 @@ INSTRUCTIONS:
 1. Take a screenshot of your app running. 
 2. Drag and drop the image here in GitHub's editor OR save it in your 'public' folder as 'demo.png' 
 -->
-![Application Dashboard](./public/demo.png)
+![Application Dashboard](<img width="1920" height="1080" alt="Screenshot (620)" src="https://github.com/user-attachments/assets/bb7bbd53-96b8-49b9-bbe0-928c7f9adbf1" />
+)
 
 ---
 
