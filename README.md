@@ -11,7 +11,7 @@
 
 ## 🔗 Live Deployment
 
-### [🚀 View Live Demo]([INSERT_YOUR_VERCEL_LINK_HERE])
+### [🚀 View Live Demo]([https://adgen-ai-marketing-3vg0d2nka-smita-singhs-projects.vercel.app/])
 
 ---
 
@@ -34,7 +34,7 @@ The application implements a **two-stage generative pipeline**:
 
 1.  **Semantic Analysis & Prompt Engineering (Backend):** 
     *   The Next.js API route receives raw user input (Product + Audience).
-    *   It interfaces with **Google Gemini 1.5 Flash** to perform chain-of-thought reasoning, converting the raw input into a structured JSON payload containing a viral caption and an optically-optimized image prompt.
+    *   It interfaces with **Google Gemini ** to perform chain-of-thought reasoning, converting the raw input into a structured JSON payload containing a viral caption and an optically-optimized image prompt.
     
 2.  **Visual Synthesis (Frontend):**
     *   The frontend receives the optimized prompt and encodes it for the **Flux Diffusion Model** (via Pollinations).
@@ -49,7 +49,7 @@ The application implements a **two-stage generative pipeline**:
 | **Framework** | Next.js 15 (App Router) | Server-side rendering and robust API route handling. |
 | **Language** | TypeScript | Type safety for API responses and component props. |
 | **Styling** | Tailwind CSS v4 | Utility-first architecture for rapid, responsive UI development. |
-| **Reasoning Engine** | Google Gemini 1.5 Flash | High-speed inference and large context window for prompt optimization. |
+| **Reasoning Engine** | Google Gemini  | High-speed inference and large context window for prompt optimization. |
 | **Image Engine** | Flux (via Pollinations) | State-of-the-art open-source diffusion model for photorealistic rendering. |
 
 ---
