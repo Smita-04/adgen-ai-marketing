@@ -26,6 +26,10 @@ INSTRUCTIONS:
 2. Drag and drop the image here in GitHub's editor OR save it in your 'public' folder as 'demo.png' 
 -->
 <img width="1920" height="1080" alt="Screenshot (620)" src="https://github.com/user-attachments/assets/bb7bbd53-96b8-49b9-bbe0-928c7f9adbf1" />
+<img width="1920" height="1080" alt="Screenshot (621)" src="https://github.com/user-attachments/assets/9c4989ef-8131-45b0-b24c-f0f560d4a165" />
+<img width="1920" height="1080" alt="Screenshot (622)" src="https://github.com/user-attachments/assets/28d04cde-95b3-448c-9ea3-a958d1b9d7b4" />
+
+
 
 
 ---
