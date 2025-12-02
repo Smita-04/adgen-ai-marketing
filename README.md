@@ -81,6 +81,13 @@ ad-gen-free/
 
 
 ```
+
+
+## 🛠️ Setup Instructions  
+
 ```bash
 git clone https://github.com/Smita-04/adgen-ai.git
 cd adgen-ai
+npm install
+npm run dev
+
