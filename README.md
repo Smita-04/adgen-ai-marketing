@@ -81,5 +81,6 @@ ad-gen-free/
 
 
 ```
+```bash
 git clone https://github.com/Smita-04/adgen-ai.git
 cd adgen-ai
