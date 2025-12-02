@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AdGen AI | Automated Generative Marketing Pipeline
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38B2AC?style=flat-square&logo=tailwind-css)
+![Google Gemini](https://img.shields.io/badge/AI-Google%20Gemini-orange?style=flat-square)
 
-First, run the development server:
+> A full-stack application that orchestrates Large Language Models (LLMs) and Latent Diffusion Models (LDMs) to autonomously generate high-fidelity marketing assets from raw text inputs.
+
+---
+
+## 🔗 Live Deployment
+
+### [🚀 View Live Demo]([INSERT_YOUR_VERCEL_LINK_HERE])
+
+---
+
+## 📸 Interface Preview
+
+*(Generated output demonstrating the integration of semantic text generation and visual synthesis)*
+
+<!-- 
+INSTRUCTIONS: 
+1. Take a screenshot of your app running. 
+2. Drag and drop the image here in GitHub's editor OR save it in your 'public' folder as 'demo.png' 
+-->
+![Application Dashboard](./public/demo.png)
+
+---
+
+## 💡 System Architecture
+
+The application implements a **two-stage generative pipeline**:
+
+1.  **Semantic Analysis & Prompt Engineering (Backend):** 
+    *   The Next.js API route receives raw user input (Product + Audience).
+    *   It interfaces with **Google Gemini 1.5 Flash** to perform chain-of-thought reasoning, converting the raw input into a structured JSON payload containing a viral caption and an optically-optimized image prompt.
+    
+2.  **Visual Synthesis (Frontend):**
+    *   The frontend receives the optimized prompt and encodes it for the **Flux Diffusion Model** (via Pollinations).
+    *   Images are rendered server-side agnostic via dynamic URL parameters, ensuring low latency and zero GPU dependency on the host server.
+
+---
+
+## 🛠️ Technical Stack
+
+| Component | Technology | Reason for Choice |
+| :--- | :--- | :--- |
+| **Framework** | Next.js 15 (App Router) | Server-side rendering and robust API route handling. |
+| **Language** | TypeScript | Type safety for API responses and component props. |
+| **Styling** | Tailwind CSS v4 | Utility-first architecture for rapid, responsive UI development. |
+| **Reasoning Engine** | Google Gemini 1.5 Flash | High-speed inference and large context window for prompt optimization. |
+| **Image Engine** | Flux (via Pollinations) | State-of-the-art open-source diffusion model for photorealistic rendering. |
+
+---
+
+## 📂 Repository Structure
+
+The codebase follows a modular Next.js App Router architecture:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ad-gen-free/
+├── app/
+│   ├── api/
+│   │   └── generate/
+│   │       └── route.ts      # API Endpoint: Gemini Integration & Error Handling
+│   ├── globals.css           # Tailwind v4 Directives
+│   ├── layout.tsx            # Root Layout & Metadata
+│   └── page.tsx              # Client-Side Logic & UI Rendering
+├── public/                   # Static Assets
+├── .env.local                # Environment Secrets (Gitignored)
+├── next.config.ts            # Build Configuration
+└── package.json              # Dependency Manifest
