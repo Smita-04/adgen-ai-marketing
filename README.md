@@ -12,7 +12,8 @@
 ## 🔗 Live Deployment
 
 ### [🚀 View Live Demo]
-[(https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://speakgenie-ai-tutor-br7kbkvkv3yirhel6fxs63.streamlit.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://adgen-ai-marketing.vercel.app/)
+
    
 
 ---
