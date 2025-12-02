@@ -12,7 +12,7 @@
 ## 🔗 Live Deployment
 
 ### [🚀 View Live Demo]
-https://adgen-ai-marketing-3vg0d2nka-smita-singhs-projects.vercel.app/
+(https://adgen-ai-marketing.vercel.app/)
 
 ---
 
